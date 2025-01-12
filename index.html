@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tiger Tiger Bar - Hội An: Không gian thư giãn với chương trình khuyến mãi hấp dẫn.">
+  <meta name="keywords" content="Tiger Tiger Bar, Hội An, quán bar, khuyến mãi, giới thiệu quán, bar Hội An">
+  <meta name="author" content="Tiger Tiger Bar">
+  <title>Tiger Tiger Bar - Hội An</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Poppins"', 'sans-serif'],
+          },
+          colors: {
+            dark: '#1a202c',
+            accent: '#facc15',
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 text-accent p-4 shadow-md">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold"><i class="fas fa-cocktail"></i> Tiger Tiger Bar - Hội An</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-8 px-4">
+
+    <!-- Chương Trình Khuyến Mãi -->
+    <section class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4 text-accent"><i class="fas fa-bullhorn"></i> Happy Hour - Forever Delight</h2>
+        <ul class="list-disc list-inside text-gray-300">
+          <li>🎉 <strong>Happy Hour - Forever Delight</strong> Beer, Mocktail, Cocktail, Bucket, Long Drink</li>
+          <li>🥂 <strong>Buy 1 Free 1</strong> Buy 1 Get 1 Free = 2 For The Price Of 1</li>
+          <li>🍹 Free Shisha For Groups Of 4 Or More When Ordering 2 Cocktails Show This Website To Staff</li>
+        </ul>
+    </section>
+    
+    <!-- Hình Ảnh -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-images"></i> Hình Ảnh</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="https://i.ibb.co/BrQhFNF/2024-12-09.jpg" alt="Hình ảnh quán 1" class="w-full rounded-lg shadow-md hover:scale-105 transform transition duration-300 cursor-pointer" onclick="openModal('https://i.ibb.co/BrQhFNF/2024-12-09.jpg')">
+      </div>
+    </section>
+
+    <!-- Giới Thiệu Quán -->
+    <section class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-info-circle"></i> Introduce The Bar</h2>
+        <p class="text-gray-300 leading-7">
+            Unwind at Tiger Tiger Bar, Hoi An's hottest spot! Centrally located, our cozy bar serves up vibrant nights, unique decor and unforgettable moments with friends.
+        </p>
+      </section>
+
+    <!-- Thời Gian Hoạt Động -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-clock"></i> Operating Hours</h2>
+      <p class="text-gray-300">Monday - Sunday : <strong class="text-accent">8:00 AM - 05:00 PM</strong></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Tiger Tiger Bar - Hội An. All rights reserved. Thiết Kế Bởi Huỳnh Tấn Hiếu</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 hidden items-center justify-center">
+    <img id="modal-img" src="" alt="Image preview" class="max-w-full max-h-full rounded-lg shadow-lg">
+    <button class="absolute top-4 right-4 text-white text-2xl" onclick="closeModal()">&times;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
